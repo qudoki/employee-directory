@@ -10,7 +10,6 @@ This application creates a employee directory with React. With the application's
 ## API
 [Random User API](https://randomuser.me/)
 
-
 # Table of Contents
 - [API](https://github.com/qudoki/employee-directory/blob/main/README.md#API)
 - [Installation](https://github.com/qudoki/employee-directory/blob/main/README.md#installation)
@@ -20,7 +19,6 @@ This application creates a employee directory with React. With the application's
 - [Contributing](https://github.com/qudoki/employee-directory/blob/main/README.md#contributions)
 - [Questions](https://github.com/qudoki/employee-directory/blob/main/README.md#questions)
 - [License](https://github.com/qudoki/employee-directory/blob/main/README.md#license)
-
 
 ## Installation:
 - In the project directory, you can run "npm i" to install package dependencies.
@@ -34,7 +32,7 @@ This application creates a employee directory with React. With the application's
 ## Screenshots:
 
 #### Screenshot Name
-![ScreenShot](screenshots/main.png)
+![ScreenShot](screenshots/main.png) 🚧
 
 ## Contributing:
 - In most cases, please refer to this document: [Contributor Covenant](https://www.contributor-covenant.org/) 
