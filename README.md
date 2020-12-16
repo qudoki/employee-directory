@@ -5,7 +5,7 @@
  - [Deployed Application](<insert link here>)🚧
 
 ### Description: 
-This application creates a employee directory with React. With the application's UI broken into components, management of component states, and responses to user events, a user can view my entire employee directory at once so that they can have quick access to non-sensitive employee information. By default, a complete table of employees renders on the home page. The user can sort the table by age, or filter the users by Last Name with a search functionality.
+This application creates a employee directory with React. With the application's UI broken into components, management of component states, and responses to user events, a user can view my entire employee directory at once so that they can have quick access to non-sensitive employee information. By default, a complete table of employees renders on the home page. The user can sort the table by category, or filter the users by name with a live search functionality.
 
 ## API
 [Random User API](https://randomuser.me/)
