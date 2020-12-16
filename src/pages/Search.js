@@ -15,7 +15,8 @@ class Search extends Component {
 	//When the component mounts, get a list of all available names and update this.state.names
 	componentDidMount() {
 		API.viewAll()
-			.then((res) => this.setState({ names: res.data.message }))
+		//changed below from names to results
+			.then((res) => this.setState({ results: res.data.message }))
 			.catch((err) => console.log(err));
 	}
 
@@ -25,7 +26,7 @@ class Search extends Component {
 
 	handleFormSubmit = (event) => {
 		event.preventDefault();
-		API.searchByLastName(this.state.search)
+		API.searchByName(this.state.search)
 			.then((res) => {
 				if (res.data.status === "error") {
 					throw new Error(res.data.message);

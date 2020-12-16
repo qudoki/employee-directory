@@ -2,7 +2,7 @@
 
 
 ### Deployed App
- - [Deployed Application](<insert link here>)
+ - [Deployed Application](<insert link here>)🚧
 
 ### Description: 
 This application creates a employee directory with React. With the application's UI broken into components, management of component states, and responses to user events, a user can view my entire employee directory at once so that they can have quick access to non-sensitive employee information. By default, a complete table of employees renders on the home page. The user can sort the table by age, or filter the users by Last Name with a search functionality.
@@ -35,16 +35,17 @@ This application creates a employee directory with React. With the application's
 ![ScreenShot](screenshots/main.png) 🚧
 
 ## Contributing:
-- In most cases, please refer to this document: [Contributor Covenant](https://www.contributor-covenant.org/) 
-
+- In most cases, please refer to this document:
+- [Contributor Covenant](https://www.contributor-covenant.org/) 
 - Please notify the repository holder if you'd like to contribute.
 
 ## Questions:
 If you have any questions, please feel free to reach out via Github or email below.
 
-- qudoki [Github Profile](https://github.com/qudoki)
+- Username: qudoki
+- [Github Profile](https://github.com/qudoki)
 
-### Contributors:
+## Contributors:
 - <qdong327@gmail.com>
 
 ## License:
