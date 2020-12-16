@@ -35,7 +35,7 @@ This application creates a employee directory with React. With the application's
 ![ScreenShot](screenshots/main.png) 🚧
 
 ## Contributing:
-- In most cases, please refer to this document:
+In most cases, please refer to this document:
 - [Contributor Covenant](https://www.contributor-covenant.org/) 
 - Please notify the repository holder if you'd like to contribute.
 

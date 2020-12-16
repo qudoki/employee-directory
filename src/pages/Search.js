@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
-import SearchResults from "../components/SearchResults";
+import TableBody from "../components/TableBody";
 
 class Search extends Component {
 	state = {
@@ -47,7 +47,7 @@ class Search extends Component {
 						handleInputChange={this.handleInputChange}
 						names={this.state.names}
 					/>
-					<SearchResults results={this.state.results} />
+					<TableBody results={this.state.results} />
 				</Container>
 			</div>
 		);

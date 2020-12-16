@@ -1,0 +1,5 @@
+.container {
+    border: rgb(236, 236, 236) double 4px;
+    border-radius: 5px;
+    padding: 2%;
+}
