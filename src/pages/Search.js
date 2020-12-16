@@ -16,7 +16,7 @@ class Search extends Component {
 	componentDidMount() {
 		API.viewAll()
 		//changed below from names to results
-			.then((res) => this.setState({ results: res.data.message }))
+			.then((res) => this.setState({ results: res.data.results }))
 			.catch((err) => console.log(err));
 	}
 
@@ -29,11 +29,11 @@ class Search extends Component {
 		API.searchByName(this.state.search)
 			.then((res) => {
 				if (res.data.status === "error") {
-					throw new Error(res.data.message);
+					throw new Error(res.data.results);
 				}
-				this.setState({ results: res.data.message, error: "" });
+				this.setState({ results: res.data.results, error: "" });
 			})
-			.catch((err) => this.setState({ error: err.message }));
+			.catch((err) => this.setState({ error: err.results }));
 	};
 
 	// render
