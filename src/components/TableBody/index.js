@@ -6,18 +6,18 @@ import "./style.css";
 // function SearchResults(props) {
 // 	return (
 // 		<ul className="list-group search-results">
-// 			{props.results.map((result) => (
-// 				<li key={result} className="list-group-item">
-// 					<img alt="Person" src={result} className="img-fluid" />
-// 				</li>
-// 			))}
+// {props.results.map((result) => (
+// 	<li key={result} className="list-group-item">
+// 		<img alt="Person" src={result} className="img-fluid" />
+// 	</li>
+// ))}
 // 		</ul>
 // 	);
 // }
 
 function TableBody(props) {
 	return (
-		<div className="table-body" style={props.style}>
+		<div className="table-body">
 			{props.children}
 			<Table striped bordered hover>
 				<thead>
@@ -34,21 +34,30 @@ function TableBody(props) {
 				<tbody>
 					{/* for each thing render a row with modified info */}
 					<tr>
-						<td>Ex: John Doe</td>
-						<td>New York</td>
-						<td>John@Doe.com</td>
-						<td>12/20/85</td>
-						<td>555-1234</td>
-						<td>Photo</td>
+						<td>{props.employees[0].name}</td>
+						{/* {props.results.employees.map((person) => (
+						<td>{ person.name }</td>
+						<td>{ props.results.employees.location}</td>
+						<td>{ props.results.employees.email}</td>
+						<td>{ props.results.employees.dob}</td>
+						<td>{ props.results.employees.mobile}</td>
+						<td>{ props.results.employees.photo}</td>
+					))} */}
 					</tr>
-					{/* sample 2 */}
 					<tr>
-						<td>Ex: Jane Doe</td>
-						<td>New York</td>
-						<td>John@Doe.com</td>
-						<td>12/20/85</td>
-						<td>555-1234</td>
-						<td>Photo</td>
+						<td>Test</td>
+					</tr>
+					<tr>
+						<td>Test</td>
+					</tr>
+					<tr>
+						<td>Test</td>
+					</tr>
+					<tr>
+						<td>Test</td>
+					</tr>
+					<tr>
+						<td>Test</td>
 					</tr>
 				</tbody>
 			</Table>
