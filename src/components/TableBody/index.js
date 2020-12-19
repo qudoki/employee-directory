@@ -41,7 +41,7 @@ function TableBody(props) {
 							<td>{person.email}</td>
 							<td>{person.dob}</td>
 							<td>{person.mobile}</td>
-							<td>{person.photo}</td>
+							<img src={person.photo} class="photo" alt="profile" />
 						</tr>
 					))}
 				</tbody>
