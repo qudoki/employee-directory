@@ -8,7 +8,7 @@ class Employee extends Component {
 		search: "",
 		employees: [],
 		results: [],
-		// handleFormSubmit: () => undefined
+		handleFormSubmit: () => {}
 	};
 
 	//When the component mounts, get a list of all available names and update this.state.employees
