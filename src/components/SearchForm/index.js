@@ -17,8 +17,8 @@ function SearchForm(props) {
 					id="name"
 				/>
 				{/* <datalist id="names">
-					{props.name.map((names) => (
-						<option value={names} key={names} />
+					{props.employees.map((employee) => (
+						<option value={employee.name} key={employee} />
 					))}
 				</datalist> */}
 				<button

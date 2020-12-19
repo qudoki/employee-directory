@@ -4,7 +4,6 @@ import React from "react";
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 import Employee from "./pages/Employee";
 import Container from "./components/Container";
-import SearchForm from "./components/SearchForm";
 
 function App() {
 	return (
@@ -14,8 +13,8 @@ function App() {
 					Type in a name to activate <code>search by name</code>. You can also
 					click on any table heading to <code>sort by that category</code>.
 				</p>
-				<SearchForm />
 				<Employee />
+				
 			</Container>
 		</div>
 	);

@@ -33,32 +33,17 @@ function TableBody(props) {
 				</thead>
 				<tbody>
 					{/* for each thing render a row with modified info */}
-					<tr>
-						<td>{props.employees[0].name}</td>
-						{/* {props.results.employees.map((person) => (
-						<td>{ person.name }</td>
-						<td>{ props.results.employees.location}</td>
-						<td>{ props.results.employees.email}</td>
-						<td>{ props.results.employees.dob}</td>
-						<td>{ props.results.employees.mobile}</td>
-						<td>{ props.results.employees.photo}</td>
-					))} */}
-					</tr>
-					<tr>
-						<td>Test</td>
-					</tr>
-					<tr>
-						<td>Test</td>
-					</tr>
-					<tr>
-						<td>Test</td>
-					</tr>
-					<tr>
-						<td>Test</td>
-					</tr>
-					<tr>
-						<td>Test</td>
-					</tr>
+					{/* <td>{props.employees[0].name}</td> */}
+					{props.employees.map((person) => (
+						<tr>
+							<td>{person.name}</td>
+							<td>{person.location}</td>
+							<td>{person.email}</td>
+							<td>{person.dob}</td>
+							<td>{person.mobile}</td>
+							<td>{person.photo}</td>
+						</tr>
+					))}
 				</tbody>
 			</Table>
 		</div>
