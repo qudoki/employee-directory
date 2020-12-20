@@ -32,7 +32,7 @@ This application creates a employee directory with React. With the application's
 ## Screenshots:
 
 #### Screenshot Name
-![ScreenShot](screenshots/home.png) 🚧
+![ScreenShot](./public/screenshots/home.png) 🚧
 
 ## Contributing:
 In most cases, please refer to this document:
