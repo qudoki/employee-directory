@@ -16,14 +16,31 @@ import "./style.css";
 // }
 
 function TableBody(props) {
+	// const { eArray } = props.employees;
+	// const [sortedField, setSortedField] = React.useState(null);
+	// let sortedNames = [...eArray.names];
+	// if (sortedField !== null) {
+	// 	if (a[sortedField] < b[sortedField]) {
+	// 		return -1;
+	// 	}
+	// 	if (a[sortedField] > b[sortedField]) {
+	// 		return 1;
+	// 	}
+	// 	return 0;
+	// }
+
 	return (
 		<div className="table-body">
 			{props.children}
-			<Table striped bordered hover>
+			<Table striped bordered responsive hover size="sm" sorting={true}>
 				<thead>
-					{/* make these into links */}
+					{/* make these into links? */}
 					<tr>
-						<th>Full Name</th>
+						<th>
+							{/* <button type="button" onClick={() => setSortedField("name")}> */}
+								Full Name
+							{/* </button> */}
+						</th>
 						<th>Location</th>
 						<th>Email</th>
 						<th>DOB</th>

@@ -34,11 +34,11 @@ class Employee extends Component {
 			.catch((err) => console.log(err));
 	}
 	// if value changed, set search to that
-	handleInputChange = event => {
+	handleInputChange = (event) => {
 		this.setState({ search: event.target.value });
 	};
 
-	handleFormSubmit = event => {
+	handleFormSubmit = (event) => {
 		event.preventDefault();
 		let filteredArray = API.filterByName(
 			this.state.employees,
@@ -46,6 +46,39 @@ class Employee extends Component {
 		);
 		this.setState({ employees: filteredArray });
 	};
+
+	// sortBySymbolHandler = (key) => {
+	// 	this.setState({
+		// data: data.sort((a, b) => {
+		// 	const asc = this.state.directionSymbol[key] === 'asc';
+		// 	if (a[key] < b[key]) {
+		// 		return asc ? -1 : 1;
+		// 	} else if (a[key] > b[key]) {
+		// 		return asc ? 1 : -1;
+		// 	} else {
+		// 		return 0;
+		// 	}
+		// )),
+
+	// 		directionSymbol: {
+	// 			[key]: this.state.directionSymbol[key] === "asc" ? "desc" : "asc",
+	// 		},
+	// 	});
+	// };
+
+	// sortByPriceHandler = (key) => {
+	// 	this.setState({
+	// 		data: data.sort((a, b) =>
+	// 			this.state.direction[key] === "asc"
+	// 				? parseFloat(a[key]) - parseFloat(b[key])
+	// 				: parseFloat(b[key]) - parseFloat(a[key])
+	// 		),
+
+	// 		direction: {
+	// 			[key]: this.state.direction[key] === "asc" ? "desc" : "asc",
+	// 		},
+	// 	});
+	// };
 
 	// render
 	render() {
@@ -56,9 +89,7 @@ class Employee extends Component {
 					handleFormSubmit={this.handleFormSubmit}
 					handleInputChange={this.handleInputChange}
 				/>
-				<TableBody
-					employees={this.state.employees}
-				/>
+				<TableBody employees={this.state.employees} />
 			</div>
 		);
 	}

@@ -1,8 +1,8 @@
 .container {
     border: rgb(236, 236, 236) double 4px;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 2%;
     margin-top: 5%;
     margin-bottom: 5%;
-    overflow: visible;
+    /* overflow: visible; */
 }
