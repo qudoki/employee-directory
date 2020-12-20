@@ -8,7 +8,7 @@ class Employee extends Component {
 		search: "",
 		employees: [],
 		results: [],
-		handleFormSubmit: () => {}
+		// handleFormSubmit: () => {}
 	};
 
 	//When the component mounts, get a list of all available names and update this.state.employees
@@ -34,11 +34,11 @@ class Employee extends Component {
 			.catch((err) => console.log(err));
 	}
 	// if value changed, set search to that
-	handleInputChange = (event) => {
+	handleInputChange = event => {
 		this.setState({ search: event.target.value });
 	};
 
-	handleFormSubmit = (event) => {
+	handleFormSubmit = event => {
 		event.preventDefault();
 		let filteredArray = API.filterByName(
 			this.state.employees,
@@ -58,7 +58,6 @@ class Employee extends Component {
 				/>
 				<TableBody
 					employees={this.state.employees}
-					results={this.state.results}
 				/>
 			</div>
 		);
