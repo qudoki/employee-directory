@@ -31,7 +31,7 @@ This application creates a employee directory with React. With the application's
 
 ## Screenshots:
 
-#### Screenshot Name
+#### Default View
 ![ScreenShot](./public/screenshots/home.png) 🚧
 
 ## Contributing:
