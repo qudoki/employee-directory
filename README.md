@@ -2,7 +2,7 @@
 
 
 ### Deployed App
- - [Deployed Application](<insert link here>)🚧
+ - [Deployed Application](https://qudoki.github.io/employee-directory/)
 
 ### Description: 
 This application creates a employee directory with React. With the application's UI broken into components, management of component states, and responses to user events, a user can view my entire employee directory at once so that they can have quick access to non-sensitive employee information. By default, a complete table of employees renders on the home page. The user can sort the table by category, or filter the users by name with a live search functionality.
@@ -32,7 +32,7 @@ This application creates a employee directory with React. With the application's
 ## Screenshots:
 
 #### Screenshot Name
-![ScreenShot](screenshots/main.png) 🚧
+![ScreenShot](screenshots/home.png) 🚧
 
 ## Contributing:
 In most cases, please refer to this document:
