@@ -32,11 +32,11 @@ function TableBody(props) {
 	return (
 		<div className="table-body">
 			{props.children}
-			<Table striped bordered responsive hover size="sm" sorting={true}>
+			<Table striped bordered responsive hover size="sm">
 				<thead>
 					{/* make these into links? */}
 					<tr>
-						<th className="sort" onClick={props.handleSortClick}></th>
+						<th><button className="sort" onClick={props.handleSortClick}>Full Name</button></th>
 						<th>Location</th>
 						<th>Email</th>
 						<th>DOB</th>

@@ -8,8 +8,8 @@ class Employee extends Component {
 		search: "",
 		employees: [],
 		results: [],
-		sortAscending: true,
-		filteredUsers: []
+		// sortAscending: true,
+		// filteredUsers: []
 		// handleFormSubmit: () => {}
 	};
 
@@ -49,47 +49,24 @@ class Employee extends Component {
 		this.setState({ employees: filteredArray });
 	};
 
-	handleSortClick = () => {
-		let sorted = [];
-		if (this.state.sortAscending) {
-			sorted = this.state.allUsers.sort(function (a, b) {
-				if (a.name.first < b.name.first) {
-					return -1;
+	handleSortClick = (key) => {
+		// let nameArray = [];
+		// let map = this.state.employees.map(x => x.name)
+		// nameArray.push(map);
+		// console.log(map);
+		this.setState({
+			employees: this.state.employees.sort((a, b) => {
+				const asc = this.state.employees.dob;
+				if (a.state.employees[key].dob < b.state.employees[key].dob) {
+					return asc ? -1 : 1;
+				} else if (a.state.employees[key].dob > b.state.employees[key].dob) {
+					return asc ? 1 : -1;
+				} else {
+					return 0;
 				}
-				if (a.name.first > b.name.first) {
-					return 1;
-				}
-				return 0;
-			});
-			this.setState({ sortAscending: false });
-		} else {
-			sorted = this.state.allUsers.sort(function (a, b) {
-				if (a.name.first < b.name.first) {
-					return 1;
-				}
-				if (a.name.first > b.name.first) {
-					return -1;
-				}
-				return 0;
-			});
-			this.setState({ sortAscending: true });
-		}
-		this.setState({ filteredUsers: sorted });
+			}),
+		});
 	};
-
-
-	// sortBySymbolHandler = (key) => {
-	// 	this.setState({
-	// data: data.sort((a, b) => {
-	// 	const asc = this.state.directionSymbol[key] === 'asc';
-	// 	if (a[key] < b[key]) {
-	// 		return asc ? -1 : 1;
-	// 	} else if (a[key] > b[key]) {
-	// 		return asc ? 1 : -1;
-	// 	} else {
-	// 		return 0;
-	// 	}
-	// )),
 
 	// 		directionSymbol: {
 	// 			[key]: this.state.directionSymbol[key] === "asc" ? "desc" : "asc",
@@ -109,6 +86,34 @@ class Employee extends Component {
 	// 			[key]: this.state.direction[key] === "asc" ? "desc" : "asc",
 	// 		},
 	// 	});
+	// };
+
+	// handleSortClick = () => {
+	// 	let sorted = [];
+	// 	if (this.state.sortAscending) {
+	// 		sorted = this.state.employees.sort(function (a, b) {
+	// 			if (a.employees.name < b.employees.name) {
+	// 				return -1;
+	// 			}
+	// 			if (a.employees.name > b.employees.name) {
+	// 				return 1;
+	// 			}
+	// 			return 0;
+	// 		});
+	// 		this.setState({ sortAscending: false });
+	// 	} else {
+	// 		sorted = this.state.employees.sort(function (a, b) {
+	// 			if (a.employees.name < b.employees.name) {
+	// 				return 1;
+	// 			}
+	// 			if (a.employees.name > b.employees.name) {
+	// 				return -1;
+	// 			}
+	// 			return 0;
+	// 		});
+	// 		this.setState({ sortAscending: true });
+	// 	}
+	// 	this.setState({ filteredUsers: sorted });
 	// };
 
 	// render
