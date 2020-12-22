@@ -8,6 +8,8 @@ class Employee extends Component {
 		search: "",
 		employees: [],
 		results: [],
+		sortAscending: true,
+		filteredUsers: []
 		// handleFormSubmit: () => {}
 	};
 
@@ -47,18 +49,47 @@ class Employee extends Component {
 		this.setState({ employees: filteredArray });
 	};
 
+	handleSortClick = () => {
+		let sorted = [];
+		if (this.state.sortAscending) {
+			sorted = this.state.allUsers.sort(function (a, b) {
+				if (a.name.first < b.name.first) {
+					return -1;
+				}
+				if (a.name.first > b.name.first) {
+					return 1;
+				}
+				return 0;
+			});
+			this.setState({ sortAscending: false });
+		} else {
+			sorted = this.state.allUsers.sort(function (a, b) {
+				if (a.name.first < b.name.first) {
+					return 1;
+				}
+				if (a.name.first > b.name.first) {
+					return -1;
+				}
+				return 0;
+			});
+			this.setState({ sortAscending: true });
+		}
+		this.setState({ filteredUsers: sorted });
+	};
+
+
 	// sortBySymbolHandler = (key) => {
 	// 	this.setState({
-		// data: data.sort((a, b) => {
-		// 	const asc = this.state.directionSymbol[key] === 'asc';
-		// 	if (a[key] < b[key]) {
-		// 		return asc ? -1 : 1;
-		// 	} else if (a[key] > b[key]) {
-		// 		return asc ? 1 : -1;
-		// 	} else {
-		// 		return 0;
-		// 	}
-		// )),
+	// data: data.sort((a, b) => {
+	// 	const asc = this.state.directionSymbol[key] === 'asc';
+	// 	if (a[key] < b[key]) {
+	// 		return asc ? -1 : 1;
+	// 	} else if (a[key] > b[key]) {
+	// 		return asc ? 1 : -1;
+	// 	} else {
+	// 		return 0;
+	// 	}
+	// )),
 
 	// 		directionSymbol: {
 	// 			[key]: this.state.directionSymbol[key] === "asc" ? "desc" : "asc",

@@ -36,11 +36,7 @@ function TableBody(props) {
 				<thead>
 					{/* make these into links? */}
 					<tr>
-						<th>
-							{/* <button type="button" onClick={() => setSortedField("name")}> */}
-								Full Name
-							{/* </button> */}
-						</th>
+						<th className="sort" onClick={props.handleSortClick}></th>
 						<th>Location</th>
 						<th>Email</th>
 						<th>DOB</th>
