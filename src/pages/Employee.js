@@ -56,10 +56,10 @@ class Employee extends Component {
 		// console.log(map);
 		this.setState({
 			employees: this.state.employees.sort((a, b) => {
-				const asc = this.state.employees.dob;
-				if (a.state.employees[key].dob < b.state.employees[key].dob) {
+				const asc = this.state.employees.name;
+				if (a.state.employees[key].name < b.state.employees[key].name) {
 					return asc ? -1 : 1;
-				} else if (a.state.employees[key].dob > b.state.employees[key].dob) {
+				} else if (a.state.employees[key].name > b.state.employees[key].name) {
 					return asc ? 1 : -1;
 				} else {
 					return 0;
